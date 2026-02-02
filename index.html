@@ -33,7 +33,7 @@
         radial-gradient(circle at 86% 86%, rgba(255,255,255,.50), transparent 45%),
         radial-gradient(circle at top, var(--bg2), var(--bg1));
 
-      font-family: system-ui, sans-serif;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       overflow: hidden;
       padding: 16px;
     }
@@ -58,7 +58,7 @@
       box-shadow: 0 18px 60px rgba(0,0,0,.15);
     }
 
-    /* Shrek + Fiona image */
+    /* Your photo */
     .hero {
       width: min(360px, 86vw);
       height: auto;
@@ -67,10 +67,12 @@
       border-radius: 18px;
       box-shadow: 0 14px 30px rgba(0,0,0,.18);
       border: 4px solid rgba(255,255,255,.7);
+      object-fit: cover;
     }
 
+    /* Make the question a little smaller */
     h1 {
-      font-size: clamp(26px, 4vw, 44px);
+      font-size: clamp(22px, 3.2vw, 34px);
       margin: 10px 0 18px;
     }
 
@@ -114,7 +116,7 @@
     .hint {
       margin-top: 10px;
       font-size: 13px;
-      opacity: .7;
+      opacity: .75;
     }
 
     .result {
@@ -147,8 +149,8 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- Replace this image file with YOUR uploaded one -->
-    <img class="hero" src="shrek-fiona.jpg" alt="Shrek and Fiona in love" />
+    <!-- Put your image file in the same folder/repo as index.html -->
+    <img class="hero" src="IMG_5307.jpeg" alt="Us" />
 
     <h1>Kateryna Maksymenko, will you be my Valentine?</h1>
 
