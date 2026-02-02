@@ -241,12 +241,19 @@
     noBtn.addEventListener("click", e => e.preventDefault());
 
     yesBtn.addEventListener("click", () => {
-      zone.style.display = "none";
-      hint.style.display = "none";
-      result.style.display = "block";
-      resizeConfettiCanvas();
-      fullScreenConfetti();
-    });
+  zone.style.display = "none";
+  hint.style.display = "none";
+  result.style.display = "block";
+  resizeConfettiCanvas();
+  fullScreenConfetti();
+
+  // ⬇️ SEND YOU A TEXT (iPhone-friendly)
+  setTimeout(() => {
+    window.location.href =
+      "sms:+13213141035?body=I said YES❤️!";
+  }, 800);
+});
   </script>
 </body>
 </html>
+
